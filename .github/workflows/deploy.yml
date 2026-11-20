@@ -23,10 +23,10 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npx ng build --configuration production --base-href /nome-do-repositorio/
+        run: npx ng build --configuration production --base-href /FieldOps-angular/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/nome-do-projeto-angular/browser
+          publish_dir: ./dist/fieldops/browser
