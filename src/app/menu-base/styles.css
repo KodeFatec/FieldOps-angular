@@ -102,6 +102,20 @@
   }
 }
 
+@media (max-width: 991.98px) {
+  #sidebar {
+    --bs-offcanvas-width: 280px;
+  }
+
+  #sidebar:not(.show) {
+    visibility: hidden;
+  }
+
+  body.modal-open {
+    overflow: hidden;
+  }
+}
+
 .sb-toggle {
   position: absolute;
   top: 20px;

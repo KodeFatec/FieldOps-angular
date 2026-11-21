@@ -30,8 +30,9 @@
                 <li><a class="sb-item nav-link rounded-2 d-flex align-items-center gap-2" title="Clientes" routerLink="/app/clients" routerLinkActive="active" ariaCurrentWhenActive="page"><i class="bi bi-buildings fs-6"></i><span class="sb-label">Clientes</span></a></li>
                 <li><a class="sb-item nav-link rounded-2 d-flex align-items-center gap-2" title="Equipamentos" routerLink="/app/equipment" routerLinkActive="active" ariaCurrentWhenActive="page"><i class="bi bi-broadcast-pin fs-6"></i><span class="sb-label">Equipamentos</span></a></li>
                 <li><a class="sb-item nav-link rounded-2 d-flex align-items-center gap-2" title="Modelos de Inspeção" routerLink="/app/inspection-templates" routerLinkActive="active" ariaCurrentWhenActive="page"><i class="bi bi-clipboard-data fs-6"></i><span class="sb-label">Modelos de Inspeção</span></a></li>
-                <li><a class="sb-item nav-link rounded-2 d-flex align-items-center gap-2" title="Inspeções" routerLink="/app/inspections" routerLinkActive="active" ariaCurrentWhenActive="page"><i class="bi bi-image fs-6"></i><span class="sb-label">Inspeções</span><span class="sb-badge badge rounded-pill text-bg-primary ms-auto">18</span></a></li>
-                <li><a class="sb-item nav-link rounded-2 d-flex align-items-center gap-2 position-relative" title="Não Conformidades" routerLink="/app/non-conformities" routerLinkActive="active" ariaCurrentWhenActive="page"><i class="bi bi-exclamation-triangle fs-6"></i><span class="sb-label">Não Conformidades</span><span class="sb-badge badge rounded-pill text-bg-danger ms-auto">4</span></a></li>
+                <li><a class="sb-item nav-link rounded-2 d-flex align-items-center gap-2" title="Inspeções" routerLink="/app/inspections" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page"><i class="bi bi-image fs-6"></i><span class="sb-label">Inspeções</span><span class="sb-badge badge rounded-pill text-bg-primary ms-auto">18</span></a></li>
+                <li><a class="sb-item nav-link rounded-2 d-flex align-items-center gap-2" title="Revisões" routerLink="/app/review" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page"><i class="bi bi-check2-square fs-6"></i><span class="sb-label">Revisões</span></a></li>
+                <li><a class="sb-item nav-link rounded-2 d-flex align-items-center gap-2 position-relative" title="Não Conformidades" routerLink="/app/non-conformities" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page"><i class="bi bi-exclamation-triangle fs-6"></i><span class="sb-label">Não Conformidades</span><span class="sb-badge badge rounded-pill text-bg-danger ms-auto">4</span></a></li>
               </ul>
             </nav>
 
@@ -151,8 +152,7 @@
             </article>
           </div>
 
-          <footer class="table-footer"><span id="footerCount">Mostrando 1 a 4 de 4 registros ativos</span><nav aria-label="Paginação"><ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>
-<li><a class="sb-item nav-link rounded-2 d-flex align-items-center gap-2 position-relative" title="Revisões" routerLink="/app/review" routerLinkActive="active" ariaCurrentWhenActive="page"><i class="bi bi-check2-square fs-6"></i><span class="sb-label">Revisões</span></a></li><li class="page-item active"><a class="page-link" href="#">1</a></li><li class="page-item"><a class="page-link" href="#">2</a></li><li class="page-item"><a class="page-link" href="#">3</a></li><li class="page-item"><a class="page-link" href="#">Próximo</a></li></ul></nav></footer>
+          <footer class="table-footer"><span id="footerCount">Mostrando 1 a 4 de 4 registros ativos</span><nav aria-label="Paginação"><ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li><li class="page-item active"><a class="page-link" href="#">1</a></li><li class="page-item"><a class="page-link" href="#">2</a></li><li class="page-item"><a class="page-link" href="#">3</a></li><li class="page-item"><a class="page-link" href="#">Próximo</a></li></ul></nav></footer>
         </section>
       </main>
     </div>
