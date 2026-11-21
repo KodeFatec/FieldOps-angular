@@ -62,15 +62,15 @@
                 </li>
                 <li>
                   <a class="sb-item nav-link rounded-2 d-flex align-items-center gap-2 position-relative"
-                    title="Inspeções (18)" routerLink="/app/inspections" routerLinkActive="active" ariaCurrentWhenActive="page">
+                    title="Inspeções (18)" routerLink="/app/inspections" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page">
                     <i class="bi bi-image fs-6"></i><span class="sb-label">Inspeções</span>
                     <span class="sb-badge badge rounded-pill text-bg-primary ms-auto">18</span>
                   </a>
                 </li>
-<li><a class="sb-item nav-link rounded-2 d-flex align-items-center gap-2 position-relative" title="Revisões" routerLink="/app/review" routerLinkActive="active" ariaCurrentWhenActive="page"><i class="bi bi-check2-square fs-6"></i><span class="sb-label">Revisões</span></a></li>
+<li><a class="sb-item nav-link rounded-2 d-flex align-items-center gap-2 position-relative" title="Revisões" routerLink="/app/review" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page"><i class="bi bi-check2-square fs-6"></i><span class="sb-label">Revisões</span></a></li>
                 <li>
                   <a class="sb-item nav-link rounded-2 d-flex align-items-center gap-2 position-relative"
-                    title="Não Conformidades (4)" routerLink="/app/non-conformities" routerLinkActive="active" ariaCurrentWhenActive="page">
+                    title="Não Conformidades (4)" routerLink="/app/non-conformities" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page">
                     <i class="bi bi-exclamation-triangle fs-6"></i><span class="sb-label">Não Conformidades</span>
                     <span class="sb-badge badge rounded-pill text-bg-danger ms-auto">4</span>
                   </a>
@@ -463,14 +463,14 @@
 <div class="card border-0 shadow-sm mt-3">
     <div class="card-body p-4">
 
-        <div class="d-flex align-items-start justify-content-between gap-4 border-bottom pb-3">
+        <div class="chart-header d-flex align-items-start justify-content-between gap-3 border-bottom pb-3">
 
             <h5 class="fw-bold mb-0 flex-shrink-0">
                 Evolução de Inspeções dos Últimos<br>
                 30 Dias
             </h5>
 
-            <div class="d-flex align-items-center gap-4">
+            <div class="chart-legend-list d-flex align-items-center gap-3">
 
                 <div class="d-flex align-items-center gap-2">
                     <span class="chart-legend bg-success"></span>

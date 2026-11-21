@@ -1,0 +1,35 @@
+@media (max-width: 575.98px) {
+  .chart-header {
+    align-items: stretch !important;
+    flex-direction: column;
+  }
+
+  .chart-header h5 {
+    flex-shrink: 1 !important;
+  }
+
+  .chart-header h5 br {
+    display: none;
+  }
+
+  .chart-legend-list {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap: 0.75rem !important;
+  }
+
+  .chart-legend-list > div {
+    min-width: 0;
+  }
+
+  .chart-legend-list .small {
+    white-space: nowrap;
+  }
+
+  .chart-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+}
